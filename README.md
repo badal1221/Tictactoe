@@ -11,5 +11,6 @@ In this Tic Tac Toe game you have one option: -> Play with Friend
 The Tic Tac Toe is a great way to pass your free time whether you're standing in a line or spending time with your kids. Its offline App means you do not need of internet to play. Because of the simplicity of Tic Tac Toe, it is often used as a pedagogical tool for teaching the concepts of good sportsmanship and the branch of artificial intelligence.
 
 App Screens
-![IMG_20230209_014458](https://user-images.githubusercontent.com/97961884/217642325-f9e0fe1e-3397-4833-a073-26c74b1daa9e.jpg)
-![2](https://user-images.githubusercontent.com/97961884/217642452-b82ed349-ac66-49ed-8545-bba1181fc8cf.jpg)
+![1](https://user-images.githubusercontent.com/97961884/217643278-89b46947-3f21-4ee1-add7-c8bcae5568e0.jpg)
+![22](https://user-images.githubusercontent.com/97961884/217643302-a21edca3-8aed-454c-9a9b-3d2fc48b49b3.jpg)
+
