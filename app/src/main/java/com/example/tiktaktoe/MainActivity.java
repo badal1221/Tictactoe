@@ -3,6 +3,8 @@ package com.example.tiktaktoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -71,9 +73,10 @@ public class MainActivity extends AppCompatActivity {
                    if (btn1.getText().toString().equals(btn2.getText().toString()) && btn1.getText().toString().equals(btn3.getText().toString()) && !btn1.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn1.getText().toString(), Toast.LENGTH_SHORT).show();
                        if(btn1.getText().toString().equals("X"))
-                          textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
+                           textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn1,btn2,btn3);
                        clr();
                    } else if (btn4.getText().toString().equals(btn5.getText().toString()) && btn4.getText().toString().equals(btn6.getText().toString()) && !btn4.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn4.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -81,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn4,btn5,btn6);
                        clr();
                    } else if (btn7.getText().toString().equals(btn8.getText().toString()) && btn7.getText().toString().equals(btn9.getText().toString()) && !btn7.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn7.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -88,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn7,btn8,btn9);
                        clr();
                    } else if (btn1.getText().toString().equals(btn4.getText().toString()) && btn1.getText().toString().equals(btn7.getText().toString()) && !btn1.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn1.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -95,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn1,btn4,btn7);
                        clr();
                    } else if (btn2.getText().toString().equals(btn5.getText().toString()) && btn2.getText().toString().equals(btn8.getText().toString()) && !btn2.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn2.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -102,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn2,btn5,btn8);
                        clr();
                    } else if (btn3.getText().toString().equals(btn6.getText().toString()) && btn3.getText().toString().equals(btn9.getText().toString()) && !btn3.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn3.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -109,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn3,btn6,btn9);
                        clr();
                    } else if (btn1.getText().toString().equals(btn5.getText().toString()) && btn1.getText().toString().equals(btn9.getText().toString()) && !btn1.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn1.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -116,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn1,btn5,btn9);
                        clr();
                    } else if (btn3.getText().toString().equals(btn5.getText().toString()) && btn3.getText().toString().equals(btn7.getText().toString()) && !btn3.getText().toString().equals("")) {
                        Toast.makeText(MainActivity.this, "THIS ROUND WINNER IS " + btn3.getText().toString(), Toast.LENGTH_SHORT).show();
@@ -123,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
                            textView3.setText(String.valueOf(Integer.parseInt(textView3.getText().toString())+1));
                        else
                            textView4.setText(String.valueOf(Integer.parseInt(textView4.getText().toString())+1));
+                       bgset(btn3,btn5,btn7);
                        clr();
                    } else if (count == 9) {
                        Toast.makeText(MainActivity.this, "THIS ROUND IS A DRAW", Toast.LENGTH_SHORT).show();
@@ -144,6 +154,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE);
+            }
+        },2000);
+    }
+    void bgset(Button btnn1,Button btnn2,Button btnn3){
+        btnn1.setBackgroundResource(R.drawable.custom_btnn_bg2);
+        btnn2.setBackgroundResource(R.drawable.custom_btnn_bg2);
+        btnn3.setBackgroundResource(R.drawable.custom_btnn_bg2);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//            }
+//        },2000);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                btnn1.setBackgroundResource(R.drawable.custom_btnn_bg);
+                btnn2.setBackgroundResource(R.drawable.custom_btnn_bg);
+                btnn3.setBackgroundResource(R.drawable.custom_btnn_bg);
             }
         },2000);
     }
