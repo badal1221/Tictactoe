@@ -161,12 +161,6 @@ public class MainActivity extends AppCompatActivity {
         btnn1.setBackgroundResource(R.drawable.custom_btnn_bg2);
         btnn2.setBackgroundResource(R.drawable.custom_btnn_bg2);
         btnn3.setBackgroundResource(R.drawable.custom_btnn_bg2);
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//            }
-//        },2000);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
