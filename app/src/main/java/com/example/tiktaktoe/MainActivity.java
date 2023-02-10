@@ -3,6 +3,7 @@ package com.example.tiktaktoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -17,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,resetscr;
     private TextView textView1,textView2,textView3,textView4;
     int flag=0,count=0;
-    private  String TEXT_CONTENTS;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         btn1=findViewById(R.id.btn1);
         btn2=findViewById(R.id.btn2);

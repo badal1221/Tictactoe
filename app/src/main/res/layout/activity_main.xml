@@ -1,230 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg1"
     android:textAlignment="center"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
+    <LinearLayout
+        android:id="@+id/ll1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90sp">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline8"
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_tv_bg"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_tv_bg"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+        android:layout_below="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:orientation="horizontal">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline9"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_tv_bg"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="30sp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_tv_bg"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="65sp"
+        android:id="@+id/ll3"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.32" />
+        android:layout_below="@id/ll2"
+        android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/custom_btnn_bg"
+                android:onClick="clck"
+                android:textSize="30sp"
+                android:layout_weight="1"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline10"
-        android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/custom_btnn_bg"
+                android:onClick="clck"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/custom_btnn_bg"
+                android:onClick="clck"
+                android:textSize="30sp"
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:id="@+id/ll4"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.71" />
+        android:layout_below="@id/ll3"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_btnn_bg"
+            android:onClick="clck"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="396dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.032"
-        app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="0.026" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_btnn_bg"
+            android:onClick="clck"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            />
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btn1"
-        app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btn2"
-        app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/btn5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn4"
-        app:layout_constraintEnd_toEndOf="@+id/btn2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn2"
-        app:layout_constraintTop_toBottomOf="@+id/btn2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btn6"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn5"
-        app:layout_constraintEnd_toEndOf="@+id/btn3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn3"
-        app:layout_constraintTop_toBottomOf="@+id/btn2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/btn7"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline10"
-        app:layout_constraintEnd_toEndOf="@+id/btn4"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn4"
-        app:layout_constraintTop_toBottomOf="@+id/btn4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btn8"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline10"
-        app:layout_constraintEnd_toEndOf="@+id/btn5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn5"
-        app:layout_constraintTop_toBottomOf="@+id/btn4"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btn9"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_btnn_bg"
-        android:onClick="clck"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn8"
-        app:layout_constraintEnd_toEndOf="@+id/btn6"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn6"
-        app:layout_constraintTop_toTopOf="@+id/btn8"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_tv_bg"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline9"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="@+id/guideline8"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.479" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_tv_bg"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toEndOf="@+id/textView1"
-        app:layout_constraintTop_toTopOf="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_tv_bg"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline9"
-        app:layout_constraintEnd_toEndOf="@+id/textView1"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <TextView
-        android:id="@+id/textview4"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:background="@drawable/custom_tv_bg"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView3" />
-
-    <Button
-        android:id="@+id/resetscr"
-        android:layout_width="140dp"
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_btnn_bg"
+            android:onClick="clck"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_btn_bg"
-        android:text="RESET SCORE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline10"
-        app:layout_constraintVertical_bias="0.432" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/ll5"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll4"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_btnn_bg"
+            android:onClick="clck"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_btnn_bg"
+            android:onClick="clck"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_btnn_bg"
+            android:onClick="clck"
+            android:textSize="30sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/resetscr"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_bg"
+            android:text="RESET SCORE"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/ll5"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
