@@ -24,6 +24,6 @@ Android concepts used:
 ✓Custom drawable
 
 ## App Screens
-![1](https://user-images.githubusercontent.com/97961884/217643278-89b46947-3f21-4ee1-add7-c8bcae5568e0.jpg)
-![22](https://user-images.githubusercontent.com/97961884/217643302-a21edca3-8aed-454c-9a9b-3d2fc48b49b3.jpg)
+![12](https://user-images.githubusercontent.com/97961884/218176572-076f953b-68b2-408e-9bd1-2ab715d7261a.jpg)    
+![11](https://user-images.githubusercontent.com/97961884/218176605-398382d0-91c6-4edf-9fe7-18db0d1ce21e.jpg)
 
